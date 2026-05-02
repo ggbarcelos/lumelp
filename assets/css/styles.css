@@ -1359,6 +1359,328 @@ h3 {
 }
 
 
+
+/* ========== ELEMENTOS GRÁFICOS DECORATIVOS ========== */
+
+/* Decoração nos Títulos */
+section h2 {
+  position: relative;
+  padding-bottom: 1.5rem;
+  display: inline-block;
+}
+
+section h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff006e, #0066ff);
+  border-radius: 2px;
+  animation: slideInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 0, 110, 0.5), rgba(0, 102, 255, 0.5), transparent);
+  border-radius: 1px;
+}
+
+/* Seções com decorações de fundo */
+.section-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-block::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  left: -100px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 0, 110, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Info Cards com Ícones */
+.info-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(0, 102, 255, 0.1));
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 400ms ease;
+}
+
+.info-card:hover::before {
+  top: -30%;
+  right: -30%;
+  opacity: 0.5;
+}
+
+.info-card h3::before {
+  content: '■';
+  display: inline-block;
+  margin-right: 0.75rem;
+  color: #ff006e;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* Timeline com Decorações */
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 1.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid #ff006e;
+  box-shadow: 0 0 0 4px rgba(255, 0, 110, 0.2);
+  transition: all 300ms ease;
+}
+
+.timeline li:hover::before {
+  transform: scale(1.3);
+  box-shadow: 0 0 0 8px rgba(255, 0, 110, 0.3);
+}
+
+.timeline-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff006e, #ff4599);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 12px rgba(255, 0, 110, 0.2);
+}
+
+/* Padrão de pontinhos sutil */
+.section-alt {
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(0, 102, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 110, 0.03) 0%, transparent 50%);
+}
+
+/* Divisor visual entre seções */
+.section-block::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.2), transparent);
+  pointer-events: none;
+}
+
+/* Plan Cards com ícones decorativos */
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff006e, #0066ff);
+  border-radius: 1.25rem 1.25rem 0 0;
+  transition: height 300ms ease;
+}
+
+.plan-card:hover::before {
+  height: 8px;
+}
+
+.plan-card h3::before {
+  content: '▲';
+  display: inline-block;
+  margin-right: 0.75rem;
+  color: #0066ff;
+}
+
+/* Benefit Items com ícones melhorados */
+.benefit-item {
+  position: relative;
+}
+
+.benefit-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 0, 110, 0.05), rgba(0, 102, 255, 0.05));
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.benefit-item:hover::before {
+  opacity: 1;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+}
+
+.benefit-item:hover .benefit-icon {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 8px 20px rgba(255, 0, 110, 0.3));
+}
+
+/* Animações de entrada */
+@keyframes slideInLeft {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+/* Efeito visual em elementos interativos */
+.info-card,
+.plan-card,
+.benefit-item {
+  position: relative;
+}
+
+.info-card::after,
+.plan-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.info-card:hover::after,
+.plan-card:hover::after {
+  opacity: 1;
+}
+
+/* Decoração sutil nas descrições */
+.intro-text::before {
+  content: '✦';
+  display: inline-block;
+  margin-right: 1rem;
+  color: #ff006e;
+  font-size: 1.2rem;
+}
+
+.intro-text::after {
+  content: '✦';
+  display: inline-block;
+  margin-left: 1rem;
+  color: #0066ff;
+  font-size: 1.2rem;
+}
+
+/* Hero screenshots com efeito */
+.hero-screens img {
+  transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.hero-screens img:hover {
+  transform: translateY(-8px) scaleX(1.02);
+  filter: drop-shadow(0 30px 60px rgba(255, 0, 110, 0.2));
+}
+
+/* Padrão em seção solução */
+.solution-benefits {
+  position: relative;
+}
+
+.solution-benefits::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 0, 110, 0.05) 0px,
+      rgba(255, 0, 110, 0.05) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+  pointer-events: none;
+  border-radius: var(--radius-xl);
+}
+
+/* Efeito de brilho nos badges */
+.impact-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-badge::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Responsive - remover decorações em telas pequenas se necessário */
+@media (max-width: 767.98px) {
+  section h2::before {
+    width: 40px;
+  }
+
+  .section-block::before,
+  .section-block::after {
+    opacity: 0.5;
+  }
+
+  .benefit-icon {
+    font-size: 2.5rem;
+  }
+}
+
+
 @media (max-width: 575.98px) {
   .team-grid {
     grid-template-columns: 1fr;
