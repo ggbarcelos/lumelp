@@ -1,0 +1,22 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.11.0/bin/node /opt/homebrew/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v23.11.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/banana/Documents/Projetos/GotoMobi/LumeLp/.npmrc
+5 silly config load:file:/Users/banana/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm exec lighthouse http://127.0.0.1:4173 --chrome-path=/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --only-categories=performance --emulated-form-factor=mobile --throttling-method=simulate --quiet --chrome-flags=--headless=new --no-sandbox --output=json --output-path=./.lh-mobile-2.json
+8 verbose argv "exec" "--yes" "--" "lighthouse" "http://127.0.0.1:4173" "--chrome-path=/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge" "--only-categories=performance" "--emulated-form-factor=mobile" "--throttling-method=simulate" "--quiet" "--chrome-flags=--headless=new --no-sandbox" "--output=json" "--output-path=./.lh-mobile-2.json"
+9 verbose logfile logs-max:10 dir:/Users/banana/Documents/Projetos/GotoMobi/LumeLp/.npm-cache/_logs/2026-05-02T00_08_34_039Z-
+10 verbose logfile /Users/banana/Documents/Projetos/GotoMobi/LumeLp/.npm-cache/_logs/2026-05-02T00_08_34_039Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/lighthouse 153ms (cache revalidated)
+14 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 verbose cwd /Users/banana/Documents/Projetos/GotoMobi/LumeLp
+17 verbose os Darwin 25.3.0
+18 verbose node v23.11.0
+19 verbose npm  v11.6.2
+20 verbose exit 1
+21 verbose code 1

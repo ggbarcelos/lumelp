@@ -1,0 +1,23 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.11.0/bin/node /opt/homebrew/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v23.11.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/banana/Documents/Projetos/GotoMobi/LumeLp/.npmrc
+5 silly config load:file:/Users/banana/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm exec lighthouse http://127.0.0.1:4173 --only-categories=performance --preset=desktop --throttling-method=simulate --quiet --chrome-flags=--headless --no-sandbox --output=json --output-path=./.lh-desktop-3.json
+8 verbose argv "exec" "--yes" "--" "lighthouse" "http://127.0.0.1:4173" "--only-categories=performance" "--preset=desktop" "--throttling-method=simulate" "--quiet" "--chrome-flags=--headless --no-sandbox" "--output=json" "--output-path=./.lh-desktop-3.json"
+9 verbose logfile logs-max:10 dir:/Users/banana/Documents/Projetos/GotoMobi/LumeLp/.npm-cache/_logs/2026-05-02T00_12_12_890Z-
+10 verbose logfile /Users/banana/Documents/Projetos/GotoMobi/LumeLp/.npm-cache/_logs/2026-05-02T00_12_12_890Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+14 http fetch GET 200 https://registry.npmjs.org/lighthouse 523ms (cache revalidated)
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+17 verbose cwd /Users/banana/Documents/Projetos/GotoMobi/LumeLp
+18 verbose os Darwin 25.3.0
+19 verbose node v23.11.0
+20 verbose npm  v11.6.2
+21 verbose exit 0
+22 info ok
