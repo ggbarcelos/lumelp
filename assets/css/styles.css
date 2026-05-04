@@ -472,6 +472,33 @@ h3 {
   position: relative;
 }
 
+.section-investment {
+  background: linear-gradient(135deg, rgba(255, 0, 110, 0.1) 0%, rgba(0, 102, 255, 0.1) 100%);
+  padding: 3rem 2rem;
+}
+
+.investment-card {
+  background: white;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(255, 0, 110, 0.15);
+}
+
+.investment-card h2 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+.investment-card p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
 .section-problema,
 .section-impacto,
 .section-final {
@@ -543,6 +570,24 @@ h3 {
 .metric-card small {
   color: #666;
   font-size: 0.85rem;
+}
+
+.problem-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(10, 14, 39, 0.1);
+}
+
+.problem-section h3 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.problem-section p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-main);
 }
 
 .impact-grid {
@@ -1570,6 +1615,17 @@ section h2::after {
   color: #ff006e;
   font-size: 1.2rem;
   vertical-align: middle;
+}
+
+.info-card-highlight {
+  background: linear-gradient(135deg, rgba(255, 0, 110, 0.08) 0%, rgba(0, 102, 255, 0.08) 100%) !important;
+  border: 2px solid var(--accent);
+  padding: 2rem !important;
+}
+
+.info-card-highlight h3 {
+  color: var(--accent);
+  margin-top: 0;
 }
 
 /* Timeline com Decorações */
