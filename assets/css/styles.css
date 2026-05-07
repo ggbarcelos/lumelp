@@ -719,6 +719,22 @@ h3 {
   margin: 0.5rem 0;
 }
 
+.team-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #e1306c;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  transition: opacity 0.2s;
+}
+
+.team-instagram:hover {
+  opacity: 0.75;
+  color: #e1306c;
+}
+
 .team-member small {
   color: rgba(10, 14, 39, 0.7);
   line-height: 1.6;
